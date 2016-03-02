@@ -61,18 +61,18 @@ Once logged in, run the following commands.
 
 1. Reset the password for the ubuntu account::
 
-   sudo passwd ubuntu
+     sudo passwd ubuntu
 
 and set it to something you'll remember.
 
 2. Next, install R and the gdebi tool::
 
-   sudo apt-get update && sudo apt-get install gdebi-core r-base
+     sudo apt-get update && sudo apt-get install gdebi-core r-base
 
 3. Download & install RStudio Server::
    
-   wget https://download2.rstudio.org/rstudio-server-0.99.891-amd64.deb
-   sudo gdebi -n rstudio-server-0.99.891-amd64.deb
+     wget https://download2.rstudio.org/rstudio-server-0.99.891-amd64.deb
+     sudo gdebi -n rstudio-server-0.99.891-amd64.deb
 
 4. Finally, go to 'http://' + your hostname + ':8787' in a browser,
 eg. ::
