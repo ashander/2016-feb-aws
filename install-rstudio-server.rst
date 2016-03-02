@@ -2,8 +2,7 @@
 Running RStudio Server in the cloud
 ===================================
 
-Starting from ami-05384865 (ubuntu-wily-15.10-amd64-server), and
-following https://www.rstudio.com/products/rstudio/download-server/:
+Ref: https://www.rstudio.com/products/rstudio/download-server/
 
 Start an m4.large ami-05384865:
 
