@@ -94,5 +94,19 @@ you set it to above.
 
 Voila!
 
+----
+
+You can now just go ahead and use this, or you can "stop" it, or you
+can freeze into an AMI for later use.
+
+Note that on reboot, RStudio Server will start up again and all your files
+will be there.
+
+Go back to the index: :doc:`index`.
+
 .. @@CTB demonstrate graphing, etc.
 .. revisiting what we did...
+
+.. @@ rebooting; converting to AMI
+   
+.. @@ meditations on file transfer

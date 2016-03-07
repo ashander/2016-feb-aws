@@ -23,7 +23,11 @@ Full table of contents:
 
    boot
    login-shell
-
+   login-shell-unix
+   login-shell-win
+   install-rstudio-server
+   terminate-instance
+   things-to-mention
 
 Indices and tables
 ==================
