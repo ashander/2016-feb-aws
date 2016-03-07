@@ -115,11 +115,20 @@ are (of course) detached when you terminate an instance.
 Creating snapshots of volumes
 =============================
 
+1. Actions, Create snapshot
+---------------------------   
+
 .. thumbnail:: images/create-snapshot-1.png
    :width: 20%
-           
+
+2. Fill out name and description          
+--------------------------------
+
 .. thumbnail:: images/create-snapshot-2.png
    :width: 20%
-           
+
+3. Click 'Close' & wait.
+------------------------
+
 .. thumbnail:: images/create-snapshot-3.png
    :width: 20%

@@ -92,6 +92,4 @@ Note that for your instance name you can use either "Public IP" or
 .. thumbnail:: images/boot-9.png
    :width: 20%
 
-
-@@
 You can now :doc:`login-shell` or :doc:`configure-firewall`.
