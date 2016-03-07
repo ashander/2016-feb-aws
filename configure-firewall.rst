@@ -12,7 +12,7 @@ RStudio Server.  If you want to run other things, like a Web server,
 you'll need to find the port(s) associated with those services and
 open those instead of 8000-9000.  (Tip: Web servers run on port 80.)
 
-1. Select 'Security Groups'.
+1. Select 'Security Groups'
 ---------------------------
 
 Find "Security Groups" in the lower pane of your instance's
@@ -22,16 +22,13 @@ information page, and click on "launch-wizard-N".
    :width: 20%
            
 2. Select 'Inbound'
------------------
+-------------------
 
 .. thumbnail:: images/network-1.png
    :width: 20%
 
 3. Select 'Edit'
 ----------------
-
-4. Select 'Add Rule'
---------------------
 
 .. thumbnail:: images/network-2.png
    :width: 20%
@@ -51,10 +48,13 @@ Add a new rule: Custom TCP, 8000-9000, Source Anywhere.
 -----------------
 
 7. Return to the Instances page.
------------------
+--------------------------------
 
 .. thumbnail:: images/network-4.png
    :width: 20%
  
+----
 
+You're done!
 
+Go back to the index: :doc:`index`

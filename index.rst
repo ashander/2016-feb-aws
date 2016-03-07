@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the 2016 February AWS tutorial
-=========================================
+2016 February AWS tutorial main page
+====================================
 
 This is the documentation for a workshop on Amazon Web Services, offered
 at UC Davis (and broadcast online) on March 7, 2016.  `The workshop page is here. <https://dib-training.readthedocs.org/en/pub/2016-03-03-aws-br.html>`__
