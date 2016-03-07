@@ -35,3 +35,11 @@ Host information box - MACHINE_NAME location
 
 .. thumbnail:: images/boot-9.png
    :width: 20%
+
+----
+
+Logging in is the starting point for most of the follow-on tutorials.
+For example, you can now install and run software on your EC2 instance.
+
+Go back to the top page to continue: :doc:`index`
+
