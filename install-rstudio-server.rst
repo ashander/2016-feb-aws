@@ -1,88 +1,98 @@
-===================================
+***********************************
 Running RStudio Server in the cloud
-===================================
+***********************************
 
-Ref: https://www.rstudio.com/products/rstudio/download-server/
+In this section, we will run RStudio Server on a remote Amazon machine.
+This will require starting up an instance, configuring its network firewall,
+and installing and running some software.
 
-Start an m4.large ami-05384865:
+.. @@remember to terminate
+.. @@can we reboot and have it sart up again?
+.. @@diagram laying out zone etc.
 
-----
+Reference documentation for running RStudio Server on Ubuntu:
 
-Switch to zone US West (N California).
+   https://www.rstudio.com/products/rstudio/download-server/
 
-Launch instance.
+-----
 
-Community AMIs.
+1. Start up an Amazon instance
+------------------------------
 
-Search for ami-05384865 (ubuntu-wily-15.10-amd64-server)
+Start an ami-05384865 on an m4.xlarge machine, as per the instructions here:
 
-Select.
+:doc:`boot`.
 
-Choose m4.large.
+2. Configure your network firewall
+----------------------------------
 
-Review and Launch.
+Normally, Amazon computers only allow shell logins via ssh.
+Since we want to run a Web service, we need to give the outside world
+access to other network locations on the computer.
 
-Click Launch.
+Follow these instructions:
 
-Create a new key pair.
+:doc:`configure-firewall`
 
-name it 'amazon-key'.
+(You can do this while the computer is booting.)
 
-Download key pair.
+3. Log in via the shell
+-----------------------
 
-Launch instance.
+Follow these instructions to log in via the shell:
 
-View instances (lower right)
+:doc:`login-shell`.
 
-----
+4. Set a password for the 'ubuntu' account
+------------------------------------------
 
-While it's going from yellow to green, find "Security Groups" in lower pane.
-Click on "launch-wizard-N".
+Amazon Web Services computers normally require a key (the .pem file)
+instead of a login password, but RStudio Server will need us to log in
+with a password.  So we need to configure a password for the account
+we're going to use (which is 'ubuntu')
 
-In lower pane of security groups page, click on Inbound, then Edit.
-
-Add Rule.
-
-Custom TCP, 8000-9000, Source Anywhere. Save.
-
-Go back to Instances.
-
-----
-
-Find "Public DNS". This is your hostname.
-
-Log in with ssh::
-
-    ssh -i /path/to/amazon-key.pem ubuntu@ec2-54-153-33-165.us-west-1.compute.amazonaws.com
-
-You will need to ``chmod og-rwx`` your amazon-key.pem first.
-
-Once logged in, run the following commands.
-
-1. Reset the password for the ubuntu account::
-
+Create a password like so::
+  
      sudo passwd ubuntu
 
 and set it to something you'll remember.
 
-2. Next, install R and the gdebi tool::
+5. Install R and the gdebi tool
+-------------------------------
 
-     sudo apt-get update && sudo apt-get install gdebi-core r-base
+.. @@ reference debian install instructions https://help.ubuntu.com/community/AptGet/Howto and https://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html
 
-3. Download & install RStudio Server::
+Update the software catalog and install a few things::
+
+     sudo apt-get update && sudo apt-get -y install gdebi-core r-base
+
+This will take a few minutes.
+
+6. Download & install RStudio Server
+------------------------------------
+
+::
    
      wget https://download2.rstudio.org/rstudio-server-0.99.891-amd64.deb
      sudo gdebi -n rstudio-server-0.99.891-amd64.deb
 
-4. Finally, go to 'http://' + your hostname + ':8787' in a browser,
+Upon success, you should see::
+
+   Mar 07 15:20:18 ip-172-31-6-68 systemd[1]: Starting RStudio Server...
+   Mar 07 15:20:18 ip-172-31-6-68 systemd[1]: Started RStudio Server.
+
+7. Open your RStudio Server instance
+------------------------------------
+
+Finally, go to 'http://' + your hostname + ':8787' in a browser,
 eg. ::
 
    http://ec2-XX-YY-33-165.us-west-1.compute.amazonaws.com:8787/
 
-and log into RStudio with username 'ubuntu' and password whatever you set
-it to.
+and log into RStudio with username 'ubuntu' and the password
+you set it to above.
 
 Voila!
 
-.. @CTB demonstrate graphing, etc.
+.. @@CTB demonstrate graphing, etc.
 .. revisiting what we did...
