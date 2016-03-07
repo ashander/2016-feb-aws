@@ -25,6 +25,7 @@ Full table of contents:
    login-shell
    login-shell-unix
    login-shell-win
+   configure-firewall
    install-rstudio-server
    terminate-instance
    things-to-mention

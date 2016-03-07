@@ -94,4 +94,4 @@ Note that for your instance name you can use either "Public IP" or
 
 
 @@
-You can now :doc:`login-shell` or :doc:`configure-network`.
+You can now :doc:`login-shell` or :doc:`configure-firewall`.
