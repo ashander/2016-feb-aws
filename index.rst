@@ -27,6 +27,7 @@ Full table of contents:
    login-shell-win
    configure-firewall
    install-rstudio-server
+   creating-ami
    volumes-and-snapshots
    terminate-instance
    things-to-mention
