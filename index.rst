@@ -12,7 +12,7 @@ at UC Davis (and broadcast online) on March 7, 2016.  `The workshop page is here
 Start here: :doc:`boot`
 -----------------------
 
-`Click here to go to the workshop etherpad <https://etherpad.wikimedia.org/p/2016-feb-aws>`__
+`Click here to go to the workshop etherpad <https://etherpad.wikimedia.org/p/2016-03-07-aws>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Full table of contents:
@@ -38,3 +38,6 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+
+.. @@ add AWS costs
+   
