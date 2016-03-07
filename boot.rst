@@ -2,6 +2,11 @@
 Start an Amazon Web Services computer:
 **************************************
 
+This page shows you how to create a new "AWS instance", or a running
+computer.
+
+----
+
 Start at the Amazon Web Services console (http://aws.amazon.com/ and
 sign in to the console).
 
@@ -53,6 +58,13 @@ sign in to the console).
 9. Select "Create a new key pair."
 ==================================
 
+Note: you only need to do this the first time you create an instance.
+If you know where your amazon-key.pem file is, you can select 'Use an
+existing key pair' here.  But you can always create a new key pair if
+you want, too.
+
+If you have an existing key pair, go to step 12, "Launch instance."
+
 .. thumbnail:: images/boot-6.png
    :width: 20%
 
@@ -70,6 +82,16 @@ sign in to the console).
 
 .. thumbnail:: images/boot-8.png
    :width: 20%
+
+14. Bask in the glory of your running instance
+==============================================
+
+Note that for your instance name you can use either "Public IP" or
+"Public DNS". Here, the machine only has a public IP.
+
+.. thumbnail:: images/boot-9.png
+   :width: 20%
+
 
 @@
 You can now :doc:`login-shell` or :doc:`configure-network`.

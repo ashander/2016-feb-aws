@@ -6,10 +6,23 @@
 Welcome to the 2016 February AWS tutorial
 =========================================
 
+This is the documentation for a workshop on Amazon Web Services, offered
+at UC Davis (and broadcast online) on March 7, 2016.  `The workshop page is here. <https://dib-training.readthedocs.org/en/pub/2016-03-03-aws-br.html>`__
+
+Start here: :doc:`boot`
+-----------------------
+
+`Click here to go to the workshop etherpad <https://etherpad.wikimedia.org/p/2016-feb-aws>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Full table of contents:
+-----------------------
+
 .. toctree::
    :maxdepth: 2
 
    boot
+   login-shell
 
 
 Indices and tables
