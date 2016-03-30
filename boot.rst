@@ -34,6 +34,8 @@ sign in to the console).
 4. Search for ami-05384865 (ubuntu-wily-15.10-amd64-server)
 ===========================================================
 
+Use ami-05384865.
+
 .. thumbnail:: images/boot-3.png
    :width: 20%
 

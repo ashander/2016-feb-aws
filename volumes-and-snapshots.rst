@@ -74,14 +74,18 @@ You should see something like this::
   `-xvda1 202:1    0    8G  0 part /
   xvdf    202:80   0  100G  0 disk
 
-Now type::
+Now format the disk (ONLY ON EMPTY DISKS - THIS WILL ERASE ANY DATA ON
+THE DISK)::
 
    sudo mkfs -t ext4 /dev/xvdf
+
+and mount the disk::
+   
    sudo mkdir /disk
    sudo mount /dev/xvdf /disk
    sudo chmod a+rwxt /disk
 
-and voila, anything you put on /disk will be on the volume!
+and voila, anything you put on /disk will be on the volume that you allocated!
 
 The command 'df -h' will show you what disks are actually mounted & where.
 
