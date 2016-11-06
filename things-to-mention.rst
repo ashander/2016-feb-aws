@@ -33,7 +33,13 @@ costing you.  Also check your volumes and your snapshots - they should be
 empty.
 
 .. @@ account details/running costs link?
-It is also possible to get an overview of all your current usage. Go to "Billing and Cost Managment" from the drop-down under your name in the upper right of the navigation bar. In the us-west region, this currently takes you to `<https://console.aws.amazon.com/billing/home?region=us-west-1>`_. This will give a graphical and tabular summary of top free-tier services by usage, and it also provides a projection of whether you will exceed the free-tier usage in the current month. 
+It is also possible to get an overview of all your current usage. Go to
+"Billing and Cost Managment" from the drop-down under your name in the upper
+right of the navigation bar. In the us-west region, this currently takes you
+to `<https://console.aws.amazon.com/billing/home?region=us-west-1>`_. This
+will give a graphical and tabular summary of top free-tier services by usage,
+and it also provides a projection of whether you will exceed the free-tier
+usage in the current month. 
 
 ----
 
